@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.raulgsal.android.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        android:textColor="@color/title"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/title_bottom_margin"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_spotify"
+                android:text="@string/spotify"
+                android:onClick="showToast"
+                style="@style/Button"/>
+
+            <Button
+                android:id="@+id/button_scores"
+                android:text="@string/scores"
+                android:onClick="showToast"
+                style="@style/Button"/>
+
+            <Button
+                android:id="@+id/button_library"
+                android:text="@string/library"
+                android:onClick="showToast"
+                style="@style/Button"/>
+
+            <Button
+                android:id="@+id/button_build"
+                android:text="@string/build"
+                android:onClick="showToast"
+                style="@style/Button"/>
+
+            <Button
+                android:id="@+id/button_reader"
+                android:text="@string/reader"
+                android:onClick="showToast"
+                style="@style/Button"/>
+
+            <Button
+                android:id="@+id/button_capstone"
+                android:text="@string/capstone"
+                android:onClick="showToast"
+                style="@style/FinalButton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
