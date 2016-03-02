@@ -10,4 +10,6 @@
     <string name="reader">XYZ Reader</string>
     <string name="capstone">Capstone: My own App</string>
 
+    <string name="toast">"This button will launch my "</string>
+
 </resources>

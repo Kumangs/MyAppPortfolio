@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         String toastText;
 
         if(buttonText.contains("App")){
-            toastText = "This button will launch my " + buttonText + "!";
+            toastText = getString(R.string.toast) + buttonText + "!";
         } else {
-            toastText = "This button will launch my " + buttonText + " App!";
+            toastText = getString(R.string.toast) + buttonText + " App!";
         }
 
         //Cancel previous Toast
